@@ -14,8 +14,7 @@ class IcoBenchSpider(scrapy.Spider):
         for ico in response.css("td.ico_data"):
             path = ico.css("div.content a.notranslate::attr(href)").get()
             self.log('Path: {}'.format(path))
-            url = urljoin(self.base_url, path)
-
+            url = urljoin(self.base_url, path + '/financial')
             self.log('Crawl link: {}'.format(url))
             time.sleep(5)
             yield scrapy.Request(url, callback=self.parse_ico_data)
@@ -45,5 +44,13 @@ class IcoBenchSpider(scrapy.Spider):
             if key:
                 if value:
                     a[key.strip('\n').strip('\t')] = value.strip('\n').strip('\t')
+
+        for financial_row in response.css("div.tab_content div.row"):
+            label = financial_row.xpath('div[@class="label"]/text()').get()
+            value = financial_row.xpath('div[@class="value"]/text()').get()
+            self.log("Financial: {} - {}".format(label, value))
+            if label:
+                if value:
+                    a[label.strip('\n').strip('\t')] = value.strip('\n').strip('\t')
 
         return a
