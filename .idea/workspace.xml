@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7618c0-7f1b-435a-9315-c3c17775f1e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JsonParser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coin_info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IcoBench.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IcoBench.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawl_data_from_website.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_historical_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_social_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JsonParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/JsonParser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,26 +38,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapy.cfg">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IcoBench/settings.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IcoBench/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IcoBench/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IcoBench/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -66,13 +46,60 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JsonParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="327" lean-forward="true" selection-start-line="327" selection-end-line="327" />
+            <state relative-caret-position="300">
+              <caret line="327" column="44" lean-forward="true" selection-start-line="327" selection-start-column="44" selection-end-line="327" selection-end-column="44" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coin_info.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="166" column="8" lean-forward="true" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_historical_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BTC.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_social_data.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crawl_data_from_website.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,7 +133,11 @@
         <option value="$PROJECT_DIR$/IcoBench/spiders/crawl.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/coin_info.json" />
+        <option value="$PROJECT_DIR$/coin_info.csv" />
         <option value="$PROJECT_DIR$/JsonParser.py" />
+        <option value="$PROJECT_DIR$/get_social_data.py" />
+        <option value="$PROJECT_DIR$/get_historical_data.py" />
+        <option value="$PROJECT_DIR$/crawl_data_from_website.py" />
       </list>
     </option>
   </component>
@@ -170,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.JsonParser">
+  <component name="RunManager" selected="Python.crawl_data_from_website">
     <configuration name="JsonParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IcoBench" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,6 +215,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JsonParser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="crawl_data_from_website" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IcoBench" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl_data_from_website.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_historical_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IcoBench" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_historical_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,6 +288,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.crawl_data_from_website" />
+        <item itemvalue="Python.get_historical_data" />
         <item itemvalue="Python.JsonParser" />
         <item itemvalue="Python.icobench" />
       </list>
@@ -241,7 +316,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281075" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -309,10 +384,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JsonParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="327" lean-forward="true" selection-start-line="327" selection-end-line="327" />
+        <state relative-caret-position="300">
+          <caret line="327" column="44" lean-forward="true" selection-start-line="327" selection-start-column="44" selection-end-line="327" selection-end-column="44" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coin_info.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="166" column="8" lean-forward="true" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BTC.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_historical_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_social_data.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawl_data_from_website.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>

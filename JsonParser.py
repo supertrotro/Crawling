@@ -1,4 +1,5 @@
 import json
+import csv
 from enum import Enum
 from typing import Optional, Union, Any, Dict, TypeVar, Type, Callable, cast
 
@@ -319,12 +320,15 @@ def coin_list_to_dict(x: CoinList) -> Any:
 
 
 def main():
-    with open("coin_info.json", "r") as read_file:
-        data = json.load(read_file)
-        result = coin_list_from_dict(data)
-        for coin in result.data.items():
-            coin_name = coin[0]
-            coin_id = coin[1].id
+    with open('coin_info.csv', mode='w') as csv_file:
+        employee_writer = csv.writer(csv_file, delimiter=';')
+        with open("coin_info.json", "r") as read_file:
+            data = json.load(read_file)
+            result = coin_list_from_dict(data)
+            for coin in result.data.items():
+                coin_name = coin[0]
+                coin_id = coin[1].id
+                employee_writer.writerow([coin_name, coin_id])
 
 
 main()
