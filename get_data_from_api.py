@@ -31,8 +31,30 @@ def get_social_data(coin_id, token):
         #print(data_row.values())
 
 
+def main(file_path):
+    print("I'm lazy and I'm proud of it")
+    try:
+        with open(file_path) as fp:
+            line = fp.readline()
+            cnt = 1
+            while line:
+                line = line.strip()
+                if line:
+                    print("Line {}: {}".format(cnt, line.strip()))
+                    token, coin_id = line.split(";")
+                    print(token)
+                    get_historical_data(token)
+                    print(coin_id)
+                    get_social_data(coin_id)
+                line = fp.readline()
+                cnt += 1
+    finally:
+        fp.close()
+
 '''
 Example
 '''
-get_historical_data("BTC")
+
+main("coin_info.csv")
+#get_historical_data("BTC")
 #get_social_data(1182, "BTC")
