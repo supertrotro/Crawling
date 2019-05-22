@@ -1,6 +1,8 @@
 import requests
 import json
 import csv
+import array as arr
+
 
 historical_api_url = 'https://min-api.cryptocompare.com/data/histoday?fsym={}&tsym=USD&limit=1000&&api_key={}'
 social_api_url = 'https://min-api.cryptocompare.com/data/social/coin/histo/day?coinId={}&aggregate=2&limit=1000&api_key={}'
@@ -24,10 +26,10 @@ def get_social_data(coin_id, token):
     data = json.loads(requests.get(api_full_path).content)["Data"]
     output_file = open('Social_{}.csv'.format(token), 'w')
     output = csv.writer(output_file)
-    output.writerow(data[0].keys())
+    output.writerow(arr.array('token',data[0].keys()))
 
     for data_row in data:
-        output.writerow(data_row.values())
+        output.writerow(arr.array(token,data_row.values()))
         #print(data_row.values())
 
 
